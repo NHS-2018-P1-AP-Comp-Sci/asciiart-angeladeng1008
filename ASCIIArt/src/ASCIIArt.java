@@ -17,5 +17,78 @@
 public class ASCIIArt {
 	public static void main (String [] args) {
 		System.out.println("THIS IS MY ASCII ART!!!!");
+		printRain();
+		printRain();
+		System.out.println("/        /        /        /   0    /        /        /       /");
+		System.out.println("    \\        \\       \\        ||| \\        \\        \\      \\ ");
+		System.out.println("/        /      /        :####   ####  /       /        /        /");
+		System.out.println("   \\      \\      \\    :####         ####  \\       \\      \\");
+		System.out.println("/      /       /    ####               ####          /        /   ");
+		System.out.println("   \\         \\   ####                     ####  \\      \\");
+		System.out.println("/      /        ####                       ####      /       /");
+		System.out.println("         \\    ####                           ####  \\      \\");
+		System.out.println(" /      /    ####                             ####    /       /");
+		System.out.println("   \\        ####                               ####      \\   ");
+		System.out.println("/      /   ####                                 ####        /");
+		System.out.println("   \\      ####                                   ####          \\ ");
+		System.out.println("/      /  ####                                   ####    /");
+		printBottom();
+		printStem();
+		printHandle();
+	}
+		
+			public static void printRainForward() {
+				System.out.println("/        /        /        /        /        /        /        /");
+			}
+			public static void printRainBack() {
+				System.out.println("    \\        \\        \\        \\        \\        \\        \\");
+			}
+			public static void printRain() {
+				printRainForward();
+				printRainBack();
+			}
+			public static void printStem() {
+				print99Forward();
+				print99Back();
+				print99Forward();
+				print99Back();
+				print99Forward();
+				print99Back();
+				print99Forward();
+				print99Back();
+				print99Forward();
+				print99Back();
+				print99Forward();
+			}
+			public static void print99Forward() {
+				System.out.println("     /                       99                           \\");
+			}
+			public static void print99Back() {
+				System.out.println(" \\                           99                               /");
+			}
+			public static void printHandle() {
+				System.out.println("                	     99   99");
+				System.out.println("                	      99 99");
+				System.out.println("                 	       999");
+				
+			}
+			public static void printBottom() {
+				System.out.println("	  --    --    --    --    --    --    --    -");
+				System.out.print("\\        /  ");
+				printCurve();
+				System.out.println("\\        /");
+				System.out.println("       \"o\"   \"o\"   \"o\"   \"o\"   \"o\"   \"o\"   \"o\"   \"o\"  \"o\"");
+			}
+			public static void printCurveParts() {
+				System.out.print("\\\\//  ");
+				}
+			public static void printCurve() {
+				printCurveParts();
+				printCurveParts();
+				printCurveParts();
+				printCurveParts();
+				printCurveParts();
+				printCurveParts();
+				printCurveParts();
 	}
 }
